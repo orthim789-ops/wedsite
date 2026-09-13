@@ -1,0 +1,143 @@
+<section id="ai-assignment" class="ai-assignment">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>🤖 Smart Learning</span>
+
+      <h2>AI Assignment Generator</h2>
+
+      <p>
+        Generate a new assignment anytime for any subject.
+      </p>
+
+    </div>
+
+
+    <div class="generator-box">
+
+      <div class="form-group">
+
+        <label>Subject</label>
+
+        <select id="assignmentSubject">
+
+          <option value="Mathematics">
+            Mathematics
+          </option>
+
+          <option value="Science">
+            Science
+          </option>
+
+          <option value="English">
+            English
+          </option>
+
+          <option value="Khmer">
+            Khmer
+          </option>
+
+          <option value="Social Studies">
+            Social Studies
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>Grade</label>
+
+        <select id="assignmentGrade">
+
+          <option>Grade 7</option>
+          <option>Grade 8</option>
+          <option>Grade 9</option>
+          <option>Grade 10</option>
+          <option>Grade 11</option>
+          <option>Grade 12</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>Difficulty</label>
+
+        <select id="assignmentDifficulty">
+
+          <option>Easy</option>
+          <option selected>Medium</option>
+          <option>Hard</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>Topic</label>
+
+        <input
+          type="text"
+          id="assignmentTopic"
+          placeholder="Example: Fractions, Plants, Grammar..."
+        >
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>Number of Questions</label>
+
+        <select id="questionCount">
+
+          <option value="5">5 Questions</option>
+          <option value="10">10 Questions</option>
+          <option value="15">15 Questions</option>
+          <option value="20">20 Questions</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="generator-buttons">
+
+        <button
+          class="generate-btn"
+          onclick="generateAssignment()"
+        >
+          🤖 Generate Assignment
+        </button>
+
+
+        <button
+          class="new-assignment-btn"
+          onclick="generateNewAssignment()"
+        >
+          🔄 Generate New Assignment Anytime
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div
+      id="assignmentOutput"
+      class="assignment-output"
+    >
+    </div>
+
+  </div>
+
+</section>
